@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulário de Pesquisa</h1>
+      <p id="description" class="description text-center">Obrigada por participar dessa pesquisa!</p>
+      </header>
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <div class="form-group">
+        <label for="nome" id="name-label">Nome</label>
+          <input 
+          id="name" 
+          name="nome" 
+          type="text" 
+          class="form-control"
+          placeholder="Digite seu nome aqui" 
+          required 
+          />
+      </div>
+        <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email"
+          class="form-control"
+          placeholder="Digite seu email aqui"
+          required />
+      </div>
+      <div class="form-group">
+        <label for="idade" id="number-label">Idade<span class="clue">(opcional)</span>
+        </label>
+        <input
+        id="number"
+        name="idade"
+        type="number"
+        min="10"
+        max="100"
+        class="form-control"
+        placeholder="Digite sua idade aqui" />
+      </div>
+      <div class="form-group">
+        <p>Qual opção melhor descreve sua ocupação atual?</p>
+        <select id="dropdown" name="ocupacao" class="form-control" required>
+            <option disable selected value>Selecione</option>
+            <option value="estudante">Estudante</option>
+            <option value="estagiario">Estagiário</option>
+            <option value="empregado">Empregado CLT</option>
+            <option value="aposentado">Aposentado</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+     
+        <div class="form-group">
+        <p>Você gostaria de aprender a fazer sites?</p>
+        <label>
+          <input 
+          type="radio"
+          name="sim-nao-talvez"
+          class="input-radio"
+          value="sim"
+          checcked
+          />Sim</label>
+
+        <label>
+          <input
+          type="radio"
+          name="sim-nao-talvez"
+          class="input-radio"
+          value="nao" />Não</label>
+
+        <label>
+          <input
+          type="radio"
+          name="sim-nao-talvez"
+          class="input-radio"
+          value="talvez" />Talvez</label>
+      </div>
+      
+      <div class="form-group">
+        <p>Você já ouviu falar em HTML?</p>
+          <select id="html" name="html" class="form-control" required>
+            <option disable selected value>Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Quais das linguagens abaixo você conhece?<span class="clue">(Selecione todas que se aplicam)</span></p>
+
+        <label>
+          <input
+          type="checkbox"
+          name="linguagem"
+          class="input-checkbox"
+          value="html" />HTML</label>
+
+        <label>
+          <input
+          type="checkbox"
+          name="linguagem"
+          class="input-checkbox"
+          value="css" />CSS</label>
+
+        <label>
+          <input
+          type="checkbox"
+          name="linguagem"
+          class="input-checkbox"
+          value="javascript" />JavaScript</label>
+
+        <label>
+          <input
+          type="checkbox"
+          name="linguagem"
+          class="input-checkbox"
+          value="nenhuma" />Nenhuma delas</label>
+          </div>
+
+        <div class="form-group"
+         <p>Algum comentário ou sugestão?</p>
+        <textarea
+        id="sugestoes"
+        class="input-textarea"
+        name="sugestoes"
+        placeholder="Deixe aqui o seu comentário/sugestão..."></textarea>
+        </div>
+        
+<div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+      </div>
+    </body>
+</html>
